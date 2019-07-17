@@ -10,12 +10,12 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_07_17_043247) do
+ActiveRecord::Schema.define(version: 2019_07_17_075206) do
 
   create_table "tables", force: :cascade do |t|
-    t.string "day"
-    t.integer "limit"
-    t.string "subject"
+    t.string "day", null: false
+    t.integer "limit", null: false
+    t.string "subject", null: false
     t.string "room"
     t.integer "unit"
     t.string "professor"
