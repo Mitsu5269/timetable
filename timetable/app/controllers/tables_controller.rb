@@ -5,6 +5,12 @@ class TablesController < ApplicationController
   # GET /tables.json
   def index
     @tables = Table.all
+    # @modays = Table.find_by_sql("select * from tables where day = '月'")
+    # @tudays = Table.find_by_sql("select * from tables where day = '火'")
+    # @wedays = Table.find_by_sql("select * from tables where day = '水'")
+    # @thdays = Table.find_by_sql("select * from tables where day = '木'")
+    # @frdays = Table.find_by_sql("select * from tables where day = '金'")
+    # @sadays = Table.find_by_sql("select * from tables where day = '土'")
   end
 
   # GET /tables/1

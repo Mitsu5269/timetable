@@ -12,13 +12,13 @@
   <% end %>
 
   <div class="field">
-    <%= form.label :day %>
-    <%= form.text_field :day %>
+    <%= form.label :day %>    
+    <%= form.select :day, [["月曜日", "月"],["火曜日", "火"],["水曜日", "水"],["木曜日", "木"],["金曜日", "金"],["土曜日", "土"]], :include_blank => true  %>
   </div>
 
   <div class="field">
     <%= form.label :limit %>
-    <%= form.number_field :limit %>
+    <%= form.select :limit, [["1限", 1],["2限", 2],["3限", 3],["4限", 4],["5限", 5],["6限", 6]], :include_blank => true  %>
   </div>
 
   <div class="field">
